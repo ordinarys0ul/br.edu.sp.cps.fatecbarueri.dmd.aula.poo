@@ -1,0 +1,54 @@
+package fatecbarueri.dmd.aula.poo.lista2;
+
+import java.util.Scanner;
+public class Exercicios_12_13 {
+
+	
+	    public static void main(String[] args) {
+	        Scanner entrada = new Scanner(System.in);
+
+	        // Exerc 12
+	        System.out.print("Digite um número de 1 a 7: ");
+	        int dia = entrada.nextInt();
+
+	        switch (dia) {
+	            case 1:
+	                System.out.println("Domingo");
+	                break;
+	            case 2:
+	                System.out.println("Segunda-feira");
+	                break;
+	            case 3:
+	                System.out.println("Terça-feira");
+	                break;
+	            case 4:
+	                System.out.println("Quarta-feira");
+	                break;
+	            case 5:
+	                System.out.println("Quinta-feira");
+	                break;
+	            case 6:
+	                System.out.println("Sexta-feira");
+	                break;
+	            case 7:
+	                System.out.println("Sábado");
+	                break;
+	            default:
+	                System.out.println("Dia inválido.");
+	        }
+
+	        // Exercício 13
+	        System.out.print("\nDigite um ano: ");
+	        int ano = entrada.nextInt();
+
+	        if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
+	            System.out.println("O ano " + ano + " é bissexto.");
+	        } else {
+	            System.out.println("O ano " + ano + " não é bissexto.");
+	        }
+
+	        entrada.close();
+	    }
+	}
+
+
